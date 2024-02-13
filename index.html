@@ -8,9 +8,9 @@
         body {
             display: flex;
             flex-direction: column;
-            min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+            min-height: 100vh;
             font-family: 'Arial', sans-serif;
-            background-color: #b3e0f2; /* Light blue background */
+            background-color: #b3e0f2;
             color: #333;
             margin: 0;
             padding: 0;
@@ -23,19 +23,22 @@
             padding: 20px;
         }
 
+        h1, p {
+            margin: 0; /* Remove default margin for h1 and p */
+        }
+
         h1 {
-            color: #fff; /* White color for the name */
+            font-size: 24px; /* Increase font size for h1 */
         }
 
         p {
-            font-size: 18px;
+            font-size: 16px; /* Decrease font size for p */
             line-height: 1.6;
-            color: #FFFFFF;
         }
 
         section {
             padding: 20px;
-            flex-grow: 1; /* Allow the section to grow and take remaining space */
+            flex-grow: 1;
         }
 
         h2 {
@@ -66,6 +69,19 @@
             padding: 20px;
             background-color: #4285f4;
             color: #fff;
+            font-size: 18px; /* Increase font size for the footer text */
+        }
+
+        /* New style for the LinkedIn and GitHub links */
+        .social-link {
+            margin: 10px; /* Add some margin to separate the links */
+        }
+
+        /* Style for the LinkedIn and GitHub logos */
+        .social-link img {
+            height: 50px;
+            width: 50px;
+            vertical-align: middle; /* Align images vertically in the middle */
         }
     </style>
 </head>
@@ -87,7 +103,12 @@
     </section>
 
     <footer>
-        &copy; 2024 Senda Nasr | <a href="https://github.com/Senda-Nasr" style="color: #fff;">Visit my GitHub profile</a>
+        <a class="social-link" href="https://github.com/Senda-Nasr" style="color: #fff;">
+            <img src="https://github.com/Senda-Nasr/Senda-Nasr.github.io/blob/main/github-logo.png?raw=true" alt="GitHub Logo">
+        </a> &copy; 2024 Senda Nasr
+        <a class="social-link" id="linkedin-link" href="https://www.linkedin.com/in/sendanasr/">
+            <img src="https://github.com/Senda-Nasr/Senda-Nasr.github.io/blob/main/linkedin-logo.png?raw=true" alt="LinkedIn Logo">
+        </a>
     </footer>
 
 </body>
